@@ -9,7 +9,7 @@
 }
 
 .product-list-table thead tr {
-  background-color: #b2b727;
+  background-color: #71A7EC;
   color: white;
   text-align: left;
   font-weight: bold;
@@ -29,10 +29,10 @@
 }
 
 .product-list-table tbody tr:last-of-type {
-  border-bottom: 2px solid #b2b727;
+  border-bottom: 2px solid #71A7EC;
 }
 
 .product-list-table tbody tr.active-row {
   font-weight: bold;
-  color: #b2b727;
+  color: #71A7EC;
 }
