@@ -19,6 +19,18 @@ export class ProductService {
         productName: "Sugar",
         productPrice: 1,
         productWeight: 1000
+      },
+      {
+        productId: 3,
+        productName: "Strawberry",
+        productPrice: 2,
+        productWeight: 1000
+      },
+      {
+        productId: 4,
+        productName: "Peanuts",
+        productPrice: 1.6,
+        productWeight: 100
       }
     ];
   }

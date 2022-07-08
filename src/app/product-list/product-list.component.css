@@ -1,6 +1,14 @@
+#product-list-title{
+  color:#71A7EC;
+  margin-top: 50px;
+  margin-left:135px;
+
+}
+
 .product-list-table {
   border-collapse: collapse;
   margin: 25px 0;
+  margin-left:25px;
   font-size: 0.9em;
   min-width: 400px;
   border-radius: 5px 5px 0 0;
