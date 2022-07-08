@@ -1,0 +1,27 @@
+<div>
+  <div>
+    {{title}}
+  </div>
+
+  <div>
+    <table class="product-list-table"
+      *ngIf="products.length">
+      <thead>
+      <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Weight</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor='let product of products'>
+      <td>{{product.productId}}</td>
+      <td>{{product.productName}}</td>
+      <td>{{product.productPrice}}</td>
+      <td>{{product.productWeight}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
