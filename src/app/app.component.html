@@ -1,1 +1,17 @@
-<app-product-list></app-product-list>
+<div id="div-nav">
+  <body>
+  <header class="product-list-body">
+    <nav>
+      <ul>
+        <li><a routerLink="/welcome" (click)='changeHomeColor()'>Home </a></li>
+        <li><a routerLink="/products" (click)='changeProductListColor()'>Product List</a></li>
+      </ul>
+    </nav>
+  </header>
+  </body>
+</div>
+
+<div>
+  <router-outlet></router-outlet>
+</div>
+
