@@ -8,6 +8,7 @@ import {ProductListComponent} from './product-list/product-list.component';
 import {WelcomeComponent} from './welcome/welcome.component';
 import {WeightPipe} from "./shared/weight.pipe";
 import {ProductService} from "./product-list/product.service";
+import {SaveProductComponent} from "./save-product/save-product.component";
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import {ProductService} from "./product-list/product.service";
     AppComponent,
     ProductListComponent,
     WelcomeComponent,
+    SaveProductComponent,
     WeightPipe
   ],
   imports: [
@@ -22,6 +24,7 @@ import {ProductService} from "./product-list/product.service";
     HttpClientModule,
     RouterModule.forRoot([
       {path: 'products', component: ProductListComponent},
+      {path: 'save-product', component: SaveProductComponent},
       {path: 'welcome', component: WelcomeComponent},
       {path: '', redirectTo: 'welcome', pathMatch: 'full'},
       {path: '**', redirectTo: 'welcome', pathMatch: 'full'},

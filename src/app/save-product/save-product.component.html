@@ -1,0 +1,23 @@
+<div class="save-product">
+
+  <div class="product-list-save">
+    <div id="product-list-name-insert">
+      <p class="paragraph">NAME: <input #name style="width: 165px" placeholder="Insert name." type="text"></p>
+    </div>
+    <div id="product-list-price-insert">
+      <p class="paragraph">PRICE: <input #price style="width: 166px" placeholder="Insert price." type="number"></p>
+    </div>
+    <div id="product-list-weight-insert">
+      <p class="paragraph">WEIGHT: <input #weight style="width: 150px" placeholder="Insert weight in grams."
+                                          type="number"></p>
+    </div>
+  </div>
+
+  <div>
+    <button id="save-button" (click)="createProduct( name.value, price.value, weight.value)">Save</button>
+    <button id="back-button" (click)="onBack()">Back</button>
+  </div>
+
+
+</div>
+

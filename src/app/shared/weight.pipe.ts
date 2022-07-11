@@ -1,4 +1,5 @@
 import {Pipe, PipeTransform} from "@angular/core";
+import {throwError} from "rxjs";
 
 @Pipe({
   name: 'groceryWeight'
@@ -17,6 +18,7 @@ export class WeightPipe implements PipeTransform {
       }
     } else {
       alert('Invalid value for product weight: ' + value);
+
     }
     return weight;
   }

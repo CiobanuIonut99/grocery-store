@@ -10,17 +10,32 @@ import {ProductService} from "./product.service";
 export class ProductListComponent implements OnInit {
 
   title: string = "Product List";
-
+  showProducts: boolean = true;
+  getButtonName: string ='GetProducts';
   products: any = [];
 
   constructor(private productService: ProductService) {
   }
 
   ngOnInit(): void {
-    this.productService.getProducts().subscribe((data: ProductInterface) =>{
-      console.log(data);
-      this.products = data;
-    })
+
+  }
+
+  getProducts() {
+
+    if(this.showProducts){
+      this.productService.getProducts().subscribe((data: ProductInterface) => {
+        console.log(data);
+        this.products = data;
+        this.showProducts = false;
+        this.getButtonName ='HideProducts';
+      })
+    } else{
+      this.products = [];
+      this.showProducts = true;
+      this.getButtonName='ShowProducts'
+    }
+
   }
 
 }

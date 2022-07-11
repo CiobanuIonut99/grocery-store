@@ -1,6 +1,6 @@
 #product-list-title{
   color:#71A7EC;
-  margin-top: 50px;
+  margin-top: 5px;
   margin-left:135px;
 
 }
@@ -43,4 +43,41 @@
 .product-list-table tbody tr.active-row {
   font-weight: bold;
   color: #71A7EC;
+}
+
+.product-list-buttons {
+  margin-left: 180px;
+}
+
+#get-button {
+  color: #71A7EC;
+  border-radius: 10px 10px 10px 10px;
+
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #71A7EC;
+  font-size:20px;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+#save-product {
+  margin-left: 15px;
+  margin-top: 30px;
+
 }

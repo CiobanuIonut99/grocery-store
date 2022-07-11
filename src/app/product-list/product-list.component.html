@@ -1,6 +1,12 @@
-<div>
+<div style="display: inline">
+
   <div id="product-list-title">
-    <h1>{{title}}</h1>
+    <ul id="save-product">
+      <li>
+        <a routerLink='/save-product'>Save Product</a>
+      </li>
+    </ul>
+    <h1 *ngIf="showProducts === false">{{title}}</h1>
   </div>
 
   <div>
@@ -24,4 +30,13 @@
       </tbody>
     </table>
   </div>
+
+  <div class="product-list-buttons">
+    <button id="get-button" (click)="getProducts()">{{getButtonName}}</button>
+  </div>
+
+<div>
+  <router-outlet></router-outlet>
+</div>
+
 </div>
