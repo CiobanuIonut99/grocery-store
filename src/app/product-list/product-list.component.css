@@ -1,8 +1,7 @@
-#product-list-title{
+#product-list{
   color:#71A7EC;
   margin-top: 5px;
   margin-left:135px;
-
 }
 
 .product-list-table {
@@ -45,7 +44,7 @@
   color: #71A7EC;
 }
 
-.product-list-buttons {
+.product-list-get-button {
   margin-left: 180px;
 }
 

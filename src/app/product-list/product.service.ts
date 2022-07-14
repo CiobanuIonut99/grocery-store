@@ -8,7 +8,7 @@ import {catchError, Observable, retry, throwError} from "rxjs";
 })
 export class ProductService {
 
-  private productsURL = 'http://localhost:8080';
+  private productsURL = 'http://localhost:8080/products/';
 
   httpOptions = {
     headers: new HttpHeaders({
@@ -25,10 +25,29 @@ export class ProductService {
       .pipe(retry(1), catchError(this.handleError))
   };
 
+  getProduct(id: number): Observable<ProductInterface> {
+    return this.httpClient
+      .get<ProductInterface>(this.productsURL + id)
+      .pipe(retry(1), catchError(this.handleError));
+  }
+
   createProduct(product: ProductInterface): Observable<ProductInterface> {
     return this.httpClient
       .post<ProductInterface>(this.productsURL, JSON.stringify(product), this.httpOptions)
       .pipe(retry(1), catchError(this.handleError));
+  }
+
+  deleteProduct(id: number) {
+    return this.httpClient
+      .delete(this.productsURL + id, this.httpOptions)
+      .pipe(retry(1), catchError(this.handleError));
+  }
+
+  updateProduct(id: number, product: ProductInterface): Observable<ProductInterface>{
+    return this.httpClient
+      .put<ProductInterface>(this.productsURL + id, JSON.stringify(product), this.httpOptions)
+      .pipe(retry(1), catchError(this.handleError));
+
   }
 
   private handleError(err: HttpErrorResponse) {
