@@ -48,9 +48,6 @@ export class ProductListComponent implements OnInit {
     this.getProducts();
   }
 
-  goEdit() {
-    this.router.navigate(['/products-edit/:id']);
-  }
   changeProductListColor(): void {
     const element = document.querySelector('.app-navbar') as HTMLElement;
     element.style.backgroundColor = '#71A7EC';
