@@ -2,16 +2,20 @@
   margin-top: 25px;
 }
 
-#save-button {
+#save-product-button-save {
   margin-top: 5px;
-  margin-left: 75px;
+  margin-left: 100px;
   border-radius: 10px 10px 10px 10px;
   background-color: #abc5ff;
 }
 
-#back-button {
+#save-product-button-back {
   border-radius: 10px 10px 10px 10px;
   background-color: #abc5ff;
   margin-left: 5px;
 
+}
+
+#save-product-insert{
+  margin-left: 25px;
 }

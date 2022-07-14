@@ -11,6 +11,8 @@ import {Observable} from "rxjs";
 })
 export class EditProductComponent implements OnInit {
 
+  pageTitle: string = 'Edit Product';
+
   constructor(private productService: ProductService,
               private route: ActivatedRoute,
               private router: Router) {

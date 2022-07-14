@@ -3,6 +3,9 @@ import {ProductInterface} from "./product-interface";
 import {ProductService} from "./product.service";
 import {Router} from "@angular/router";
 
+
+
+
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
@@ -45,8 +48,12 @@ export class ProductListComponent implements OnInit {
     this.getProducts();
   }
 
-  goEdit(){
-    this.router.navigate(['/products-edit/:id'])
+  goEdit() {
+    this.router.navigate(['/products-edit/:id']);
+  }
+  changeProductListColor(): void {
+    const element = document.querySelector('.app-navbar') as HTMLElement;
+    element.style.backgroundColor = '#71A7EC';
   }
 
 }

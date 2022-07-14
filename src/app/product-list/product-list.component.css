@@ -44,14 +44,19 @@
   color: #71A7EC;
 }
 
-.product-list-get-button {
+.product-list-get {
   margin-left: 180px;
 }
 
-#get-button {
+#product-list-get-button {
   color: #71A7EC;
   border-radius: 10px 10px 10px 10px;
+  margin-left: 2px;
+}
 
+#product-list-name-data-anchor{
+  text-decoration: none;
+  color: black;
 }
 
 
@@ -76,7 +81,18 @@ li a {
 }
 
 #save-product {
-  margin-left: 15px;
+  margin-left: 25px;
   margin-top: 30px;
+}
 
+#product-list-delete-button {
+  color: #71A7EC;
+  border-radius: 10px 10px 10px 10px;
+  margin-left: 10px;
+
+}
+
+#product-list-edit-button {
+  color: #71A7EC;
+  border-radius: 10px 10px 10px 10px;
 }
