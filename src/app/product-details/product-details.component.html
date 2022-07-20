@@ -1,0 +1,19 @@
+<div id="product-detail">
+  <div id="product-detail-title">
+    {{pageTitle + ': ' + product?.productName}}
+  </div>
+
+  <div id="product-detail-details">
+    <p id="product-detail-details-id">Product Id: {{product?.productId}}</p>
+    <hr>
+    <p id="product-detail-details-name">Product Name: {{product?.productName}}</p>
+    <hr>
+    <p id="product-detail-details-price">Product Price: {{product?.productPrice}}</p>
+    <hr>
+    <p id="product-detail-details-weight">Product Weight: {{product?.productWeight}}</p>
+  </div>
+
+  <div id="product-detail-button">
+    <button id="product-detail-button-back" (click)="onBack()">Back</button>
+  </div>
+</div>

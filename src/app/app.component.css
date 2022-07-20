@@ -1,0 +1,37 @@
+div-nav {
+  background-color: #71A7EC;
+}
+body {
+  background-size: cover;
+  font-family: sans-serif;
+  margin-top: 10px;
+  padding: 30px;
+}
+
+header {
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 25px 0 black;
+}
+
+header * {
+  display: inline;
+}
+
+header li {
+  margin: 20px;
+}
+
+header li a {
+  color: black;
+  text-decoration: none;
+}
+
+

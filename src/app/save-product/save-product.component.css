@@ -1,0 +1,21 @@
+.save-product {
+  margin-top: 25px;
+}
+
+#save-product-button-save {
+  margin-top: 5px;
+  margin-left: 100px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: #abc5ff;
+}
+
+#save-product-button-back {
+  border-radius: 10px 10px 10px 10px;
+  background-color: #abc5ff;
+  margin-left: 5px;
+
+}
+
+#save-product-insert{
+  margin-left: 25px;
+}

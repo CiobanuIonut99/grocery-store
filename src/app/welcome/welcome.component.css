@@ -1,0 +1,17 @@
+#div-one {
+  margin-top: 20px;
+  height: 647.99px;
+  width: 100%;
+  background-image: url('src/app/shared/Grocery-Store-Image.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  box-shadow: 0 0 5px 0 black;
+}
+
+h2 {
+  font-family: sans-serif;
+  margin-top: 10px;
+  padding: 30px;
+  color: #dddddd;
+}
+

@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'grocery-store';
+
+  changeProductListColor(): void {
+    const element = document.querySelector('.app-navbar') as HTMLElement;
+    element.style.backgroundColor = '#71A7EC';
+  }
+
+  changeHomeColor(): void {
+    const element = document.querySelector('.app-navbar') as HTMLElement;
+    element.style.backgroundColor = 'white';
+  }
 }
