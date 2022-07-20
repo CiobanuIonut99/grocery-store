@@ -24,11 +24,11 @@
       <tbody id="product-list-body">
       <tr id="product-list-body-row" *ngFor='let product of products'>
         <td id="product-list-id-{{product.productId}}">{{product.productId}}</td>
-        <td id="product-list-name-{product.productId}}"><a id="product-list-name-data-anchor"
+        <td id="product-list-name-{{product.productId}}"><a id="product-list-name-data-anchor"
                                                            [routerLink]="['/products', product.productId]">{{product.productName}}</a>
         </td>
-        <td id="product-list-price-{product.productId}}">{{product.productPrice | currency: 'EUR'}}</td>
-        <td id="product-list-weight-{product.productId}}">{{product.productWeight | groceryWeight: 'metric'}}</td>
+        <td id="product-list-price-{{product.productId}}">{{product.productPrice | currency: 'EUR'}}</td>
+        <td id="product-list-weight-{{product.productId}}">{{product.productWeight | groceryWeight: 'metric'}}</td>
         <td id="product-list-buttons">
           <a [routerLink]="['/products-edit', product.productId]">
             <button class="buttons" id="product-list-edit-button-{{product.productId}}"
