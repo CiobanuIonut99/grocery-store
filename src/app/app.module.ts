@@ -11,6 +11,8 @@ import {ProductService} from "./product-list/product.service";
 import {SaveProductComponent} from "./save-product/save-product.component";
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { EditProductComponent } from './edit-product/edit-product.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatHeaderRowDef, MatTableModule} from "@angular/material/table";
 
 
 @NgModule({
@@ -21,7 +23,7 @@ import { EditProductComponent } from './edit-product/edit-product.component';
     SaveProductComponent,
     WeightPipe,
     ProductDetailsComponent,
-    EditProductComponent
+    EditProductComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,9 @@ import { EditProductComponent } from './edit-product/edit-product.component';
       {path: 'welcome', component: WelcomeComponent},
       {path: '', redirectTo: 'welcome', pathMatch: 'full'},
       {path: '**', redirectTo: 'welcome', pathMatch: 'full'},
-    ])
+    ]),
+    BrowserAnimationsModule,
+    MatTableModule
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]

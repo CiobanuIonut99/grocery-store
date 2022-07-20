@@ -4,8 +4,6 @@ import {ProductService} from "./product.service";
 import {Router} from "@angular/router";
 
 
-
-
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
@@ -17,6 +15,8 @@ export class ProductListComponent implements OnInit {
   showProducts: boolean = true;
   getButtonName: string = 'GetProducts';
   products: any = [];
+  displayedColumns: string[] = ['id', 'name', 'price', 'weight'];
+
 
   constructor(private productService: ProductService,
               private router: Router) {
