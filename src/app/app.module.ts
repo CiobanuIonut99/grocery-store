@@ -1,5 +1,5 @@
 import {NgModule} from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
+import {BrowserModule} from "@angular/platform-browser";
 import {RouterModule} from "@angular/router";
 import {HttpClientModule} from "@angular/common/http";
 
@@ -9,11 +9,12 @@ import {WelcomeComponent} from './welcome/welcome.component';
 import {WeightPipe} from "./shared/weight.pipe";
 import {ProductService} from "./product-list/product.service";
 import {SaveProductComponent} from "./save-product/save-product.component";
-import { ProductDetailsComponent } from './product-details/product-details.component';
-import { EditProductComponent } from './edit-product/edit-product.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatHeaderRowDef, MatTableModule} from "@angular/material/table";
-import {MatSliderModule} from "@angular/material/slider";
+import {ProductDetailsComponent} from './product-details/product-details.component';
+import {EditProductComponent} from './edit-product/edit-product.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatTableModule} from "@angular/material/table";
+import {MatButtonModule} from "@angular/material/button";
+import {MatIconModule} from "@angular/material/icon";
 
 
 @NgModule({
@@ -40,7 +41,9 @@ import {MatSliderModule} from "@angular/material/slider";
     ]),
     BrowserAnimationsModule,
     MatTableModule,
-    MatSliderModule
+    MatButtonModule,
+    MatIconModule
+
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]

@@ -12,10 +12,10 @@ import {Router} from "@angular/router";
 export class ProductListComponent implements OnInit {
 
   title: string = "Product List";
-  showProducts: boolean = true;
+  showProducts: boolean = false;
   getButtonName: string = 'GetProducts';
   products: any = [];
-  displayedColumns: string[] = ['id', 'name', 'price', 'weight'];
+  displayedColumns: string[] = ['id', 'name', 'price', 'weight', 'edit', 'delete'];
 
 
   constructor(private productService: ProductService,

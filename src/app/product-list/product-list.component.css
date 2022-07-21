@@ -1,25 +1,36 @@
-#product-list{
-  color:#71A7EC;
-  margin-top: 5px;
-  margin-left:135px;
+#product-list {
+  color: #71A7EC;
+  margin-left: 180.5px;
+  margin-top: 10px;
 }
 
 .product-list-table {
   border-collapse: collapse;
-  margin: 25px 0;
-  margin-left:25px;
-  font-size: 0.9em;
+  margin-left: 25px;
   min-width: 400px;
   border-radius: 15px 15px 0 0;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin-bottom: 15px;
 }
 
-.product-list-table thead tr {
+.product-list-table th {
   background-color: #71A7EC;
-  color: white;
-  text-align: left;
-  font-weight: bold;
+  padding: 12px 15px;
+  border-bottom: 1px solid black;
+  font-size: 15px;
+  color: black;
+}
+
+.product-list-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid black;
+  background-color: whitesmoke;
+  color: black;
+}
+
+.product-list-table tbody:nth-of-type(even) {
+  background-color: red;
 }
 
 .product-list-table th,
@@ -27,72 +38,54 @@
   padding: 12px 15px;
 }
 
-.product-list-table tbody tr {
-  border-bottom: 1px solid #dddddd;
-}
-
-.product-list-table tbody tr:nth-of-type(even) {
-  background-color: #f3f3f3;
-}
-
-.product-list-table tbody tr:last-of-type {
-  border-bottom: 2px solid #71A7EC;
-}
-
-.product-list-table tbody tr.active-row {
-  font-weight: bold;
-  color: #71A7EC;
-}
-
-.product-list-get {
-  margin-left: 180px;
-}
-
-#product-list-get-button {
-  color: #71A7EC;
-  border-radius: 10px 10px 10px 10px;
-  margin-left: 2px;
-}
-
-#product-list-name-data-anchor{
+#product-list-data-name {
   text-decoration: none;
   color: black;
 }
 
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0px;
-  overflow: hidden;
+#product-list-get-button {
+  background-color: #a6a6ff;
+  color: black;
+  border-radius: 10px 10px 10px 10px;
+  margin-left: 180px;
+  font-size: 15px;
+  height: 35px;
 }
 
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: #71A7EC;
-  font-size:20px;
-  text-align: center;
-  padding: 10px 20px;
-  text-decoration: none;
+#product-list-save-button {
+  background-color: #a6a6ff;
+  margin-top: 35px;
+  border-radius: 10px 10px 10px 10px;
+  border-color: white;
+  color: black;
+  height: 35px;
+  width: 130px;
+  margin-left: 180px;
 }
 
 #save-product {
-  margin-left: 25px;
+  margin-left: 162px;
   margin-top: 30px;
 }
 
-.buttons {
-  color: #71A7EC;
-  border-radius: 10px 10px 10px 10px;
-  margin-left: 10px;
-
+.buttons-edit {
+  background-color: #a6a6ff;
+  width: 35px;
+  height: 35px;
 }
 
-.buttons {
-  color: #71A7EC;
-  border-radius: 10px 10px 10px 10px;
+.buttons-delete {
+  background-color: #71A7EC;
+  width: 35px;
+  height: 35px;
 }
+
+.buttons-edit mat-icon {
+  color: black;
+}
+
+.buttons-delete mat-icon {
+  color: black;
+}
+
