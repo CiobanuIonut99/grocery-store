@@ -13,6 +13,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { EditProductComponent } from './edit-product/edit-product.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatHeaderRowDef, MatTableModule} from "@angular/material/table";
+import {MatSliderModule} from "@angular/material/slider";
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import {MatHeaderRowDef, MatTableModule} from "@angular/material/table";
       {path: '**', redirectTo: 'welcome', pathMatch: 'full'},
     ]),
     BrowserAnimationsModule,
-    MatTableModule
+    MatTableModule,
+    MatSliderModule
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]

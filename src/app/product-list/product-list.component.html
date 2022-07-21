@@ -36,7 +36,7 @@
 
       <tr mat-header-row *matHeaderRowDef="displayedColumns" ></tr>
 
-      <tr mat-header-row *matHeaderRowDef="let product;columns:displayedColumns"></tr>
+      <tr mat-row *matRowDef="let product;columns:displayedColumns"></tr>
 
     </table>
 
