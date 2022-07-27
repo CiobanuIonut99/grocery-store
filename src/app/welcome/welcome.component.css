@@ -8,7 +8,7 @@
   box-shadow: 0 0 5px 0 black;
 }
 
-h2 {
+#welcome-title {
   font-family: sans-serif;
   margin-top: 10px;
   padding: 30px;
