@@ -23,24 +23,24 @@
 
         <ng-container matColumnDef="id">
           <th mat-header-cell *matHeaderCellDef>Id</th>
-          <td mat-cell *matCellDef="let product">{{product.productId}}</td>
+          <td id="product-list-id-{{product.productId}}" mat-cell *matCellDef="let product">{{product.productId}}</td>
         </ng-container>
 
         <ng-container matColumnDef="name">
           <th mat-header-cell *matHeaderCellDef>Name</th>
-          <td mat-cell *matCellDef="let product">
+          <td id="product-list-name-{{product.productName}}" mat-cell *matCellDef="let product">
             <a id="product-list-data-name" [routerLink]="['/products', product.productId]">{{product.productName}}</a>
             </td>
         </ng-container>
 
         <ng-container matColumnDef="price">
           <th mat-header-cell *matHeaderCellDef>Price</th>
-          <td mat-cell *matCellDef="let product">{{product.productPrice}}</td>
+          <td id="product-list-price-{{product.productId}}" mat-cell *matCellDef="let product">{{product.productPrice}}</td>
         </ng-container>
 
         <ng-container matColumnDef="weight">
           <th mat-header-cell *matHeaderCellDef>Weight</th>
-          <td mat-cell *matCellDef="let product">{{product.productWeight}}</td>
+          <td id="product-list-weight-{{product.productId}}" mat-cell *matCellDef="let product">{{product.productWeight}}</td>
         </ng-container>
 
         <ng-container matColumnDef="edit">
