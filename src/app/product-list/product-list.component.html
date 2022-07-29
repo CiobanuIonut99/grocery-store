@@ -71,7 +71,7 @@
 
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
 
-      <tr mat-row *matRowDef="let product;columns:displayedColumns"></tr>
+      <tr id="product-list-row-{{product.productId}}" mat-row *matRowDef="let product;columns:displayedColumns"></tr>
 
     </table>
 
